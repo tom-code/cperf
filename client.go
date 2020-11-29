@@ -1,17 +1,17 @@
 package main
 
 import (
-	"bytes"
-	"encoding/json"
-	"io/ioutil"
-	"log"
-	"net/http"
-	"sync"
-	"time"
+  "bytes"
+  "encoding/json"
+  "io/ioutil"
+  "log"
+  "net/http"
+  "sync"
+  "time"
 
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
+  "github.com/prometheus/client_golang/prometheus"
+  "github.com/prometheus/client_golang/prometheus/promauto"
+  "github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 var latenc prometheus.Histogram
